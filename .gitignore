@@ -1,0 +1,7 @@
+dist/
+node_modules/
+.sass-cache/
+.img-cache/
+.DS_Store
+npm-debug.log
+*.orig

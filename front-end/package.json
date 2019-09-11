@@ -1,0 +1,20 @@
+{
+  "name": "front-end-assignment",
+  "version": "1.0.0",
+  "description": "This test is designed to evaluate general front-end skills, such as understanding of HTML elements and outline, principles of CSS cascade and SCSS structure.",
+  "main": "index.js",
+  "dependencies": {},
+  "devDependencies": {
+    "css-loader": "^3.2.0",
+    "extract-text-webpack-plugin": "^4.0.0-beta.0",
+    "path": "^0.12.7",
+    "webpack": "4.39.3",
+    "webpack-cli": "^3.3.8"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack"
+  },
+  "author": "Linkfire ApS",
+  "license": "ISC"
+}
