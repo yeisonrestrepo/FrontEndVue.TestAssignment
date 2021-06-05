@@ -1,0 +1,32 @@
+.spots {
+	width: 100%;
+	height: auto;
+
+	.section-content {
+		justify-content: center;
+		display: flex;
+		flex-wrap: wrap;
+		align-items: flex-start;
+        padding: 1rem;
+
+        figure {
+            width: calc((100% / 5));
+            margin-right: .5rem;
+
+            img {
+                width: 100%;
+                height: auto;
+            }
+
+            figcaption {
+                font-size: 10pt;
+                padding: 5px;
+                b {
+                    display: block;
+                    font-size: 18pt;
+                    margin-bottom: 10px;
+                }
+            }
+        }
+	}
+}

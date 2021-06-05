@@ -5,10 +5,12 @@
 	align-items: center;
 	justify-content: center;
     flex-direction: column;
+    background-color: $black;
 
     .heroTitle,
     p {
         width: 50%;
+        color: $white;
     }
 
     .heroTitle {
