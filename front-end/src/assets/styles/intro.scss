@@ -1,0 +1,29 @@
+.hero {
+	width: 100vw;
+	height: 100vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+    flex-direction: column;
+
+    * {
+        width: 35vw;
+    }
+
+    .heroTitle {
+        .accent {
+            color: $title-secondary-color;
+            font-size: 14pt;
+            text-transform: uppercase;
+            font-weight: 700;
+        }
+
+        h1 {
+            color: $title-primary-color;
+        }
+    }
+
+    p {
+        font-family: 'Open Sans', sans-serif;
+    }
+}
