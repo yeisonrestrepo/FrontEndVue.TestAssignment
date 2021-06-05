@@ -1,0 +1,36 @@
+@media (max-width: 768px) {
+    .content {
+        .content-item {
+            justify-content: space-around !important;
+            align-items: flex-start !important;
+            
+            .content-description {
+                max-width: 100%;
+                margin: 0;
+                padding-right: 1.5rem;
+            }
+            
+            .content-image {
+                max-width: 100%;
+                margin: 0;
+                padding: 0;
+            }
+        }
+    }
+
+    .spots {
+        .section-content {
+            justify-content: space-around;
+            
+            figure {
+                width: 48%;
+                margin: 0;
+                margin-bottom: 1.5rem;
+    
+                figcaption {
+                    font-size: 12pt;
+                }
+            }
+        }
+    }
+}
