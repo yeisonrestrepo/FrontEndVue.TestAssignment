@@ -8,7 +8,6 @@
 </template>
 
 <script>
-// import { mapState } from "vuex";
 import { AppHeader } from "../shared/components";
 import AppTodoForm from "./todo-form/todo-form.vue";
 import AppTodoList from "./todo-list/todo-list.vue";
@@ -22,7 +21,6 @@ export default {
   },
   computed: {
     todos() {
-      // return [];
       return this.$store.state.todos
     }
   },
