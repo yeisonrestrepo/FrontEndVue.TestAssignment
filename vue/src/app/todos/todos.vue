@@ -8,6 +8,7 @@
 </template>
 
 <script>
+// import { mapState } from "vuex";
 import { AppHeader } from "../shared/components";
 import AppTodoForm from "./todo-form/todo-form.vue";
 import AppTodoList from "./todo-list/todo-list.vue";
@@ -19,14 +20,11 @@ export default {
     AppTodoForm,
     AppTodoList,
   },
-  data() {
-    return {
-      todos: [
-        { title: "Create nice components", description: "chop chop chop" },
-        { title: "Hook up logic", description: "This is where the fun begins" },
-        { title: "Apply magic dust", description: "Sprinkle sprinkle" },
-      ],
-    };
+  computed: {
+    todos() {
+      // return [];
+      return this.$store.state.todos
+    }
   },
 };
 </script>

@@ -18,8 +18,8 @@
               <small>{{ item.description }}</small>
             </td>
             <td>
-              <button class="btn-danger btn-small">Delete</button> &nbsp;
-              <button class="btn-secondary btn-small">Edit</button>
+              <button class="btn-danger btn-small" @click="deleteTodo(i)">Delete</button> &nbsp;
+              <button class="btn-secondary btn-small" @click="editTodo(item, i)">Edit</button>
             </td>
           </tr>
         </tbody>
@@ -32,5 +32,13 @@
 export default {
   name: "app-todo-list",
   props: { list: Array },
+  methods: {
+      deleteTodo(index) {
+          this.$store.dispatch('DELETE_TODO_OBJECT', index);
+      },
+      editTodo(todo, index){
+          this.$store.dispatch('LOAD_EDITABLE_TODO', {todo: todo, index: index});
+      }
+  }
 };
 </script>
